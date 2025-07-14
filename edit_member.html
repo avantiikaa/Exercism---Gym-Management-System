@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Members</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Registered Members</h2>
+    {% if members %}
+    <ul>
+        {% for m in members %}
+        <li>{{ m.name }} - {{ m.email }} - {{ m.package }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No members registered yet.</p>
+    {% endif %}
+</body>
+</html>
