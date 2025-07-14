@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Submit Your Feedback</h2>
+    <form method="post">
+        <textarea name="feedback" rows="5" cols="40" placeholder="Enter your feedback here..."></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
